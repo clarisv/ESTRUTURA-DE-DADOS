@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+void exibirArray_v1(int Array [], int tamanho);
+void exibirArray_v2(int *P [], int tamanho);
+
+void main(){
+
+    system("cls");
+    int v[] = {7, 3, 1, 9, 6};
+    int tamanho = sizeof(v) / sizeof(int);
+    exibirArray_v1(v, tamanho);
+    exibirArray_v2(v, tamanho);
+   
+}
+
+
+void exibirArray_v1(int Array [], int tamanho){
+    for (int i = 0; i < tamanho; i++) printf("%d\t", Array[i]);
+    printf("\n");
+
+}
+
+void exibirArray_v2(int *P [], int tamanho){
+printf("%d\n", P);
+}
